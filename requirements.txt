@@ -1,0 +1,6 @@
+accelerate @ git+https://github.com/huggingface/accelerate
+transformers @ git+https://github.com/huggingface/transformers
+huggingface_hub
+pandas
+plotly
+einops==0.6.1
