@@ -4,7 +4,13 @@ from utils import extract_from_url, get_model, calculate_memory
 import plotly.express as px
 import numpy as np
 import gc
+import subprocess
 
+
+
+access_token = st.secrets["HF_TOKEN"]
+
+subprocess.run(f'huggingface-cli login --token {access_token}')
 
 st.set_page_config(page_title='Can you run it? LLM version', layout="wide", initial_sidebar_state="expanded")
 
